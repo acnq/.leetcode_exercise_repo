@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "../Documents/leetcode_master"
+		},
+		{
+			"name": ".leetcode",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.m": "matlab",
+			"vector": "cpp",
+			"string": "cpp",
+			"iomanip": "cpp",
+			"ostream": "cpp"
+		},
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}
