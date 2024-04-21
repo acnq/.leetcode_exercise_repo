@@ -11,10 +11,23 @@
 	"settings": {
 		"files.associations": {
 			"*.m": "matlab",
+			"*.SPEC": "ruby",
 			"vector": "cpp",
 			"string": "cpp",
 			"iomanip": "cpp",
-			"ostream": "cpp"
+			"ostream": "cpp",
+			"__hash_table": "cpp",
+			"__split_buffer": "cpp",
+			"array": "cpp",
+			"bitset": "cpp",
+			"deque": "cpp",
+			"initializer_list": "cpp",
+			"list": "cpp",
+			"queue": "cpp",
+			"stack": "cpp",
+			"string_view": "cpp",
+			"unordered_map": "cpp",
+			"unordered_set": "cpp"
 		},
 		"java.configuration.updateBuildConfiguration": "automatic"
 	}
