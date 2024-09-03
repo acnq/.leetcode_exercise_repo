@@ -1,3 +1,11 @@
+// @before-stub-for-debug-begin
+#include <vector>
+#include <string>
+#include "commoncppproblem278.h"
+
+using namespace std;
+// @before-stub-for-debug-end
+
 /*
  * @lc app=leetcode.cn id=278 lang=cpp
  * @lcpr version=30204
@@ -31,10 +39,10 @@ using namespace std;
 class Solution {
 public:
     int firstBadVersion(int n) {
-        int left, right = 1, n;
+        int left = 1, right = n;
         while (left < right)
         {
-            int mid = (left + right) / 2;
+            int mid = left +  ( - left + right) / 2;
             if (isBadVersion(mid) == 0)
             {
                 left = mid + 1;
