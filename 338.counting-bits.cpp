@@ -27,22 +27,49 @@ using namespace std;
 // @lc code=start
 class Solution {
 public:
-    int countOnes(int x) {
-        int ones = 0;
-        while (x > 0)
-        {
-            x = x & (x - 1);
-            ones++;
-        }
-        return ones;
-    }
+    // int countOnes(int x) {
+    //     int ones = 0;
+    //     while (x > 0)
+    //     {
+    //         x = x & (x - 1);
+    //         ones++;
+    //     }
+    //     return ones;
+    // }
     vector<int> countBits(int n) {
+        // vector<int> bits(n + 1);
+        // for (int i = 0; i < n + 1; i++)
+        // {
+        //     bits[i] = countOnes(i);
+        // }
+        // return bits; 
+
+        //vector<int> bits(n + 1);
+        // int highBits = 0;
+        // for (int i = 1; i < n + 1; i++)
+        // {
+        //     if ((i & (i - 1)) == 0)
+        //     {
+        //         highBits = i;
+        //     }
+        //     bits[i] = bits[i - highBits] + 1;
+        // }
+        // return bits;
+
+        // vector<int> bits(n + 1);
+        // for (int i = 1; i < n + 1; i++)
+        // {
+        //     bits[i] = bits[i >> 1] + (i & 1);
+        // }
+        // return bits;
+
         vector<int> bits(n + 1);
-        for (int i = 0; i < n + 1; i++)
+        for (int i = 1; i < n + 1; i++)
         {
-            bits[i] = countOnes(i);
+            bits[i] = bits[i & (i - 1)] + 1;
         }
-        return bits; 
+        return bits;
+        
     }
 };
 // @lc code=end
